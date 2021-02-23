@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Dashboard Page</title>
+    <link href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1 style="color:green;">Vaild Account</h1><br>
+    <p>{{n}}! you have Successfully logined!!</p>
+
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>Number</th>
+            <th>Number</th>
+            <th>Number</th>
+        </tr>
+        {% for i in range(n): %}
+        <tr>
+            <td>{{i}}</td>
+            <td>{{n}}</td>
+            <td>X</td>
+            <td>{{i * n}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+</body>
+
+</html>

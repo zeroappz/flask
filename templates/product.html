@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            drop_procduct
+        </title>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: green;">Product_Details!!</h1>
+        <form action="http://localhost:5000/list" method="POST">
+        <h4>Product_ID*</h4>
+            <select id="product_num" name="products">
+                <option value="CE15GH">
+                    CE15GH
+                </option>
+                <option value="GHUJ12">GHUJ12</option>
+                <option value="HUFS12">HUFS12</option>
+                <option value="BNLK33">BNLK33</option>
+                <option value="VINZO007">VINZO007</option>
+            </select>
+            
+        <br>
+
+            <h4>Product_Type*</h4>
+            <select id="product_type" name="product_type">
+                <option value="Electronics">Electronics</option>
+                <option value="Homeuse">Home_use</option>
+                <option value="Art">Art</option>
+                <option value="Books">Books</option>
+            </select>
+            
+        <br>
+
+            <h4>Product_Name*</h4>
+            <input type="text" name="Product_Name" id="name">
+
+            <h4>Procduct_Description</h4>
+            <input type="paragraph" name="Product_description" id="name">
+        
+            <h4>Product_MKD*</h4>
+                <input type="date" id="date" name="product_MKD">
+                
+        <br>
+            <h4>Product_EXP*</h4>
+            <input type="date" id="expire" name="expire_date">
+
+        
+            <h4>Upload Photo of Product*</h4>
+            <input type="file" id="myFile" name="filename"><br>
+            <h3 style="color: green;">Submit Here!!</h3>
+            <button style="color: green;">Submit!!</button>
+        </form>
+    </body>
+</html>
